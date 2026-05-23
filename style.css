@@ -1527,3 +1527,202 @@ h1, h2, h3, h4 {
   .cta-banner-actions { flex-direction: column; align-items: center; }
   .cta-banner-actions .btn { width: 100%; max-width: 300px; }
 }
+
+/* ═══════════════════════════════════════════════════
+   CHINESE LUXURY REDESIGN
+   朱红 Vermilion · 金色 Imperial Gold · 墨黑 Ink Black
+   ═══════════════════════════════════════════════════ */
+
+/* ── Override colour palette ── */
+:root {
+  --color-accent:      #C41E3A;   /* 朱红 vermilion red   */
+  --color-accent-dark: #8B1429;   /* 深红 deep crimson    */
+  --color-gold:        #D4AF37;   /* 金色 imperial gold   */
+  --color-dark:        #0D0A08;   /* 墨黑 ink black       */
+  --color-footer-bg:   #0D0A08;
+  --color-charcoal:    #1A120E;
+}
+
+/* ── Hero: red-tinted overlay + gold lattice grid ── */
+.hero-overlay {
+  background:
+    linear-gradient(
+      160deg,
+      rgba(10, 3, 3, 0.78) 0%,
+      rgba(70, 8, 16, 0.48) 50%,
+      rgba(10, 3, 3, 0.80) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent, transparent 39px,
+      rgba(212, 175, 55, 0.045) 39px, rgba(212, 175, 55, 0.045) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent, transparent 39px,
+      rgba(212, 175, 55, 0.045) 39px, rgba(212, 175, 55, 0.045) 40px
+    );
+}
+
+/* Decorative 福 watermark in hero */
+.hero::before {
+  content: '福';
+  position: absolute;
+  bottom: 8%;
+  right: 6%;
+  font-size: clamp(6rem, 14vw, 12rem);
+  color: rgba(212, 175, 55, 0.07);
+  font-family: var(--font-serif);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+/* ── Navbar: red underline when scrolled ── */
+.navbar.scrolled {
+  border-bottom: 1.5px solid rgba(196, 30, 58, 0.22);
+}
+
+/* ── Nav links: red accent ── */
+.nav-link:hover,
+.nav-link.active        { color: var(--color-accent); }
+.nav-link::after        { background: var(--color-accent); }
+.logo-icon              { color: var(--color-gold); }
+
+/* ── Theme toggle hover ── */
+.theme-toggle:hover     { background: var(--color-accent); }
+
+/* ── Section tags: imperial gold ── */
+.section-tag            { color: var(--color-gold); }
+.section-tag::before    { background: var(--color-gold); }
+
+/* ── Hero divider: gold ── */
+.hero-divider::before,
+.hero-divider::after    { background: rgba(212, 175, 55, 0.55); }
+.hero-divider-icon      { color: var(--color-gold); }
+
+/* ── Section header title underline: red ── */
+.section-header .section-title::after {
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+}
+
+/* ── Service card icons: red ── */
+.service-icon           { background: rgba(196, 30, 58, 0.10); }
+.service-icon svg       { stroke: var(--color-accent); }
+
+/* ── About badge: red ── */
+.about-badge            { background: var(--color-accent); }
+
+/* ── About section: subtle Chinese lattice background ── */
+.services {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent, transparent 59px,
+      rgba(196, 30, 58, 0.025) 59px, rgba(196, 30, 58, 0.025) 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent, transparent 59px,
+      rgba(196, 30, 58, 0.025) 59px, rgba(196, 30, 58, 0.025) 60px
+    );
+}
+
+/* ── Stats: ink black + red glow ── */
+.stats-section {
+  background: linear-gradient(180deg, #0D0A08 0%, #180508 50%, #0D0A08 100%);
+}
+.stats-section::before {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(196, 30, 58, 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 50%, rgba(196, 30, 58, 0.14) 0%, transparent 55%);
+}
+
+/* ── Portfolio filter buttons ── */
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ── Portfolio overlay: red tint ── */
+.portfolio-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(80, 4, 16, 0.92) 0%,
+    rgba(30, 4, 10, 0.18) 55%,
+    transparent 100%
+  );
+}
+
+/* ── Testimonial quote mark: red ── */
+.testimonial-card::before { color: var(--color-accent); }
+
+/* ── Carousel controls ── */
+.carousel-dot.active      { background: var(--color-accent); }
+.carousel-btn:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ── Form focus: red ring ── */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.18);
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  box-shadow: 0 8px 24px rgba(196, 30, 58, 0.38);
+}
+
+/* ── CTA banner: deep ink-red ── */
+.cta-banner {
+  background: linear-gradient(135deg, #0D0A08 0%, #2A0810 55%, #0D0A08 100%);
+}
+.cta-banner::before {
+  background: radial-gradient(ellipse at 50% -10%, rgba(196, 30, 58, 0.22) 0%, transparent 65%);
+}
+.cta-banner::after {
+  background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.55), transparent);
+}
+
+/* ── Footer ── */
+.footer::before {
+  background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.45), transparent);
+}
+
+/* ── Social links ── */
+.social-link:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ── Back to top ── */
+.back-to-top             { background: var(--color-accent); }
+.back-to-top:hover       { background: var(--color-accent-dark); }
+
+/* ── Author avatar ── */
+.author-avatar           { background: var(--color-accent); }
+
+/* ── Chinese decorative section-header diamond ── */
+.section-header::before {
+  content: '◈';
+  display: block;
+  font-size: 1rem;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+  opacity: 0.65;
+  letter-spacing: 0.5em;
+}
