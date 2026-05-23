@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeInteriors — Premium Interior Design Studio</title>
+  <meta name="description" content="Award-winning interior design studio crafting extraordinary residential and commercial spaces across Singapore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <strong>Luxe</strong>Interiors
+      </a>
+
+      <div id="navLinks" class="nav-links">
+        <a href="#home"      class="nav-link active">Home</a>
+        <a href="#services"  class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact"   class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode">
+          <svg id="themeIcon"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+          </svg>
+        </button>
+        <button id="hamburger"
+                class="hamburger"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Premium Interior Design Studio</p>
+      <h1 class="hero-title">
+        Designing Spaces<br>
+        <em>That Inspire</em>
+      </h1>
+      <p class="hero-subtitle">
+        We craft extraordinary interiors that blend timeless elegance with modern
+        sophistication — spaces that reflect exactly who you are.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact"   class="btn btn-outline">Get Free Consultation</a>
+      </div>
+    </div>
+    <a href="#services" class="scroll-indicator" aria-label="Scroll to services">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES / ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="services section">
+    <div class="container">
+
+      <!-- About intro -->
+      <div class="about-intro">
+        <div class="about-text fade-in">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Crafting Spaces That Tell Your Story</h2>
+          <p class="section-desc">
+            For over 15 years, LuxeInteriors has transformed residential and commercial spaces
+            across Singapore. Our award-winning team blends artistry with functionality to create
+            interiors that are uniquely yours.
+          </p>
+        </div>
+        <div class="about-image fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80"
+            alt="Luxurious open-plan living room designed by LuxeInteriors"
+          />
+          <div class="about-badge">
+            <strong>15+</strong>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service cards -->
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Residential Design</h3>
+          <p>From cosy apartments to sprawling bungalows, we create homes that balance beauty with everyday living.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8"  y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Commercial Spaces</h3>
+          <p>Offices, retail stores, and hospitality venues designed to impress clients and inspire teams.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+          </div>
+          <h3>Space Planning</h3>
+          <p>Strategic layouts that maximise flow, light, and usability without compromising on aesthetics.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Furniture Curation</h3>
+          <p>Bespoke furniture sourcing and custom pieces crafted to complement your unique design vision.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       STATS
+  ═══════════════════════════════════════════ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-row">
+            <span class="stat-number" data-target="350">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-row">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-row">
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-plus">%</span>
+          </div>
+          <p>Client Satisfaction</p>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-row">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <p>Design Awards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">
+          A curated selection of our most celebrated residential and commercial transformations.
+        </p>
+      </div>
+
+      <div class="filter-buttons" role="group" aria-label="Filter portfolio by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card"
+             data-category="residential"
+             tabindex="0" role="button"
+             aria-label="Open Orchard Road Penthouse project">
+          <img
+            src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?auto=format&fit=crop&w=800&q=80"
+            alt="Orchard Road Penthouse interior"
+          />
+          <div class="portfolio-overlay">
+            <h3>Orchard Road Penthouse</h3>
+            <p>Residential · Singapore</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card"
+             data-category="commercial"
+             tabindex="0" role="button"
+             aria-label="Open The Nexus Office project">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+            alt="The Nexus modern office interior"
+          />
+          <div class="portfolio-overlay">
+            <h3>The Nexus Office</h3>
+            <p>Commercial · Marina Bay</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card"
+             data-category="hospitality"
+             tabindex="0" role="button"
+             aria-label="Open Sentosa Villa project">
+          <img
+            src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+            alt="Sentosa Villa luxury bedroom"
+          />
+          <div class="portfolio-overlay">
+            <h3>Sentosa Villa</h3>
+            <p>Hospitality · Sentosa</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card"
+             data-category="residential"
+             tabindex="0" role="button"
+             aria-label="Open Holland Village Loft project">
+          <img
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+            alt="Holland Village Loft living space"
+          />
+          <div class="portfolio-overlay">
+            <h3>Holland Village Loft</h3>
+            <p>Residential · Holland Village</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card"
+             data-category="commercial"
+             tabindex="0" role="button"
+             aria-label="Open Raffles Place Boutique project">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80"
+            alt="Raffles Place luxury boutique interior"
+          />
+          <div class="portfolio-overlay">
+            <h3>Raffles Place Boutique</h3>
+            <p>Commercial · Raffles Place</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card"
+             data-category="hospitality"
+             tabindex="0" role="button"
+             aria-label="Open Dempsey Hill Bistro project">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+            alt="Dempsey Hill Bistro restaurant design"
+          />
+          <div class="portfolio-overlay">
+            <h3>Dempsey Hill Bistro</h3>
+            <p>Hospitality · Dempsey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Close image viewer">&times;</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Stories</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-desc">
+          We measure success by the joy of those who live and work in the spaces we create.
+        </p>
+      </div>
+
+      <div class="carousel" role="region" aria-label="Testimonials carousel">
+        <div id="carouselTrack" class="carousel-track">
+
+          <div class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "LuxeInteriors transformed our apartment into something beyond our wildest imagination.
+              Every detail was considered, every material chosen with intention. It truly feels like
+              a five-star hotel we get to call home."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">S</div>
+              <div>
+                <strong>Sarah &amp; James Tan</strong>
+                <span>Orchard Road Penthouse</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "Our new office has completely changed how our team works. Productivity is up, morale
+              is higher, and every client who walks in is instantly impressed. The ROI on this
+              investment has been remarkable."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">M</div>
+              <div>
+                <strong>Michelle Wong</strong>
+                <span>CEO, Nexus Ventures</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-text">
+              "From the initial consultation to the final walkthrough, working with LuxeInteriors
+              was an absolute pleasure. They listened, they innovated, and they delivered on time
+              and within budget. Truly outstanding."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">R</div>
+              <div>
+                <strong>Raj Krishnan</strong>
+                <span>Sentosa Villa Owner</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carouselTrack -->
+
+        <div class="carousel-controls">
+          <button id="prevBtn" class="carousel-btn" aria-label="Previous testimonial">&#8249;</button>
+          <div id="carouselDots" class="carousel-dots" role="tablist" aria-label="Select testimonial"></div>
+          <button id="nextBtn" class="carousel-btn" aria-label="Next testimonial">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info column -->
+        <div class="contact-info fade-in">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Create Something Beautiful</h2>
+          <p class="section-desc">
+            Ready to transform your space? Fill in the form and our team will be in touch within
+            24 hours to discuss your project.
+          </p>
+          <ul class="contact-details">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>1 Raffles Place, #20-01<br>One Raffles Place, Singapore 048616</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07
+                         9.81 19.8 19.8 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361
+                         1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0
+                         012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <span>+65 6321 8800</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:hello@luxeinteriors.sg">hello@luxeinteriors.sg</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-wrapper fade-in">
+          <form id="contactForm" novalidate>
+            <input type="hidden" name="_captcha"  value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text"  id="name"  name="name"
+                       placeholder="Your full name"
+                       autocomplete="name"
+                       required aria-required="true" />
+                <span id="nameError" class="form-error" role="alert">
+                  Please enter at least 2 characters.
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email"
+                       placeholder="your@email.com"
+                       autocomplete="email"
+                       required aria-required="true" />
+                <span id="emailError" class="form-error" role="alert">
+                  Please enter a valid email address.
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">
+                Phone
+                <span style="color:var(--color-text-light);font-weight:400">(optional)</span>
+              </label>
+              <input type="tel" id="phone" name="phone"
+                     placeholder="+65 9XXX XXXX"
+                     autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message"
+                        rows="5"
+                        placeholder="Tell us about your project..."
+                        required aria-required="true"></textarea>
+              <span id="messageError" class="form-error" role="alert">
+                Please enter at least 10 characters.
+              </span>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+              <span class="btn-spinner" aria-hidden="true"></span>
+              <span id="btnText">Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">✦</span>
+            <strong>Luxe</strong>Interiors
+          </a>
+          <p>
+            Creating extraordinary spaces that inspire, delight, and endure.
+            Based in Singapore, designing for the world.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83
+                         .18-.76 1.23-5.21 1.23-5.21s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0
+                         1.33.67 1.33 1.48 0 .9-.58 2.26-.87 3.51-.25 1.05.52 1.9 1.54 1.9 1.85 0
+                         3.09-2.39 3.09-5.22 0-2.15-1.45-3.65-3.52-3.65-2.4 0-3.8 1.8-3.8 3.65 0
+                         .72.28 1.5.62 1.92.07.08.08.16.06.24-.06.27-.2.86-.23.98-.04.15-.13.18-.29
+                         .11-1.1-.51-1.79-2.13-1.79-3.43 0-2.78 2.02-5.34 5.82-5.34 3.06 0 5.43 2.18
+                         5.43 5.09 0 3.04-1.91 5.48-4.56 5.48-.89 0-1.73-.46-2.02-1.01l-.55 2.05c-.2
+                         .77-.74 1.73-1.1 2.32.83.26 1.71.4 2.62.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Connect on LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Residential Design</a></li>
+            <li><a href="#services">Commercial Spaces</a></li>
+            <li><a href="#services">Space Planning</a></li>
+            <li><a href="#services">Furniture Curation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>1 Raffles Place, #20-01<br>Singapore 048616</p>
+          <p><a href="tel:+6563218800">+65 6321 8800</a></p>
+          <p><a href="mailto:hello@luxeinteriors.sg">hello@luxeinteriors.sg</a></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LuxeInteriors Pte Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Toast notification ─── -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ─── Back to top ─── -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
