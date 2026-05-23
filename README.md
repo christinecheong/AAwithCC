@@ -7,7 +7,9 @@
 
 A **zero-dependency interactive reference** for building agentic AI applications — covering context engineering, multi-agent orchestration, MCP tools, and harness design with Anthropic's agentic coding CLI. Runs entirely in the browser with no build step, no package manager, no framework.
 
-🌐 **Live demo:** https://christinecheong.github.io/AAwithCC/
+🌐 **Live demo (Reference page):** https://christinecheong.github.io/AAwithCC/
+
+🏡 **Live demo (Luxe Interiors):** https://christinecheong.github.io/AAwithCC/luxe-interiors.html
 
 ---
 
